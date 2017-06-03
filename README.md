@@ -33,6 +33,10 @@ Much love to the Marlin folks. Thanks for the great work!
 * `LEFT_PROBE_BED_POSITION`
 * `RIGHT_PROBE_BED_POSITION`
 * `BACK_PROBE_BED_POSITION`
+* `X_MAX_ENDSTOP_INVERTING`
+* `Y_MAX_ENDSTOP_INVERTING`
+* `Z_MAX_ENDSTOP_INVERTING`
+* `Z_CLEARANCE_BETWEEN_PROBES`
 
 Disabled the following
 
