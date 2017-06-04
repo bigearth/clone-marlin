@@ -37,6 +37,7 @@ Much love to the Marlin folks. Thanks for the great work!
 * `Y_MAX_ENDSTOP_INVERTING`
 * `Z_MAX_ENDSTOP_INVERTING`
 * `Z_CLEARANCE_BETWEEN_PROBES`
+* `DEFAULT_AXIS_STEPS_PER_UNIT`
 
 Disabled the following
 
