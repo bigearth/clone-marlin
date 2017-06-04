@@ -42,3 +42,5 @@ Disabled the following
 
 * `MIN_SOFTWARE_ENDSTOPS`
 * `MAX_SOFTWARE_ENDSTOPS`
+
+have you considered running your Z slower?

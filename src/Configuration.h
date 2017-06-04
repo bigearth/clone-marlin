@@ -476,7 +476,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 4000, 500 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 1600, 500 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -772,6 +772,9 @@
  *   You specify the rectangle and the density of sample points.
  *   The result is a single tilted plane. Best for a flat bed.
  *
+ Bilinear auto bed leveling.
+Using the proximity sensor to detect the height of the heatbed in 16 places and creating a 3D mesh grid to compensate for inaccuracies in the X and Y dimensions of your machine.
+Warning it's loud at the end as the Z axis is still grinding.
  * - AUTO_BED_LEVELING_BILINEAR
  *   Probe several points in a grid.
  *   You specify the rectangle and the density of sample points.
