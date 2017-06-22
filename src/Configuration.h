@@ -76,8 +76,8 @@
 // build by the user have been successfully uploaded into firmware.
 #define STRING_CONFIG_H_AUTHOR "Clone by EARTH" // Who made the changes.
 #define SHOW_BOOTSCREEN
-#define STRING_SPLASH_LINE1 "0.1.1" // will be shown during bootup in line 1
-#define STRING_SPLASH_LINE2 "clone.earth"        // will be shown during bootup in line 2
+#define STRING_SPLASH_LINE1 "" // will be shown during bootup in line 1
+#define STRING_SPLASH_LINE2 "www.clone.earth"        // will be shown during bootup in line 2
 
 //
 // *** VENDORS PLEASE READ *****************************************************
