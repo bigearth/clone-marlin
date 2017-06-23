@@ -412,8 +412,8 @@ void lcd_print(char c) { charset_mapper(c); }
   }
 
   static void logo_lines(const char* const extra) {
-    int indent = (LCD_WIDTH - 6 - lcd_strlen_P(extra)) / 2;
-    int indent2 = (LCD_WIDTH - 8 - lcd_strlen_P(extra)) / 2;
+    int indent = (LCD_WIDTH - 5 - lcd_strlen_P(extra)) / 2;
+    int indent2 = (LCD_WIDTH - 7 - lcd_strlen_P(extra)) / 2;
     lcd.setCursor(indent, 0);                    lcd_printPGM(PSTR("Clone"));  lcd_printPGM(extra);
     lcd.setCursor(indent2, 1);                    lcd_printPGM(PSTR("by EARTH"));  lcd_printPGM(extra);
   }
