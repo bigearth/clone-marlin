@@ -1,7 +1,7 @@
 # Marlin Firmware for Clone
 
 More info at [clone.earth](http://www.clone.earth).
-<img align="right" src="https://i.imgur.com/U9apCaa.jpg" height='300px'/>
+<img align="right" src="https://s3-us-west-1.amazonaws.com/www-clone-earth-assets/home.jpg" height='300px'/>
 
 This is [Marlin 1.1.x Firmware](https://github.com/MarlinFirmware/Marlin) which has been optimized for the Clone's hardware.
 
@@ -44,4 +44,23 @@ Disabled the following
 * `MIN_SOFTWARE_ENDSTOPS`
 * `MAX_SOFTWARE_ENDSTOPS`
 
-have you considered running your Z slower?
+### Calibration steps
+
+1. `G28`
+  * Home X, Y and Z
+2. `G29`
+  * Bed Leveling Routine
+3. `G1 X50 Y30 F5000`
+  * Move to a good place for the next steps
+4. `G1 Z0`
+  * Move the Z Axis to it’s absolute 0 point
+5. `G92 Z10`
+  * Tell the Z it’s now at 10mm, even though it won’t move
+  * Manually move to where paper slides under extruder tip
+6. `M114 Z`
+  * Gets the axis current values
+  * Take the Z value reported and plug it into this equation (Offset = 10 - Z + 0.1)
+7. `M851 Z-Offset`
+  * Note this means you would type the letter Z then a minus sign, and then the value of ‘Offset’ from the previous step: Ex: `M851 Z-0.7`
+8. `M500`
+  * Save to EEPROM
